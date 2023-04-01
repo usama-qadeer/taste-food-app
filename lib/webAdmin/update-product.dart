@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:food_ordering/model/product-model.dart';
 import 'package:food_ordering/webAdmin/update-complete-process.dart';
@@ -30,7 +29,7 @@ class _UpdateProductState extends State<UpdateProduct> {
                     stream: FirebaseFirestore.instance
                         .collection("products")
                         .snapshots(),
-                    builder: (context, snapshot) {
+                    builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
                       if (!snapshot.hasData) {
                         return Center(
                           child: CircularProgressIndicator(),
