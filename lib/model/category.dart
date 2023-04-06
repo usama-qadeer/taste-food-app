@@ -6,8 +6,10 @@ class Category {
 }
 
 List<Category> categories = [
-  Category(image: ("assets/burger.png"), title: "Burger"),
+  Category(image: ("assets/sandwich.png"), title: "Sandwich"),
+  Category(image: ("assets/saladd.png"), title: "Salad"),
+  Category(image: ("assets/pizzaa.png"), title: "Pizza"),
   Category(image: ("assets/fastfood.png"), title: "Fast Food"),
-  Category(image: ("assets/protein.png"), title: "Protein"),
-  Category(image: ("assets/salad.png"), title: "Salad"),
+  Category(image: ("assets/drinks.png"), title: "Drink"),
+  Category(image: ("assets/appetizers.png"), title: "Appetizers"),
 ];
