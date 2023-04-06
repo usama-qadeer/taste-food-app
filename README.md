@@ -1,6 +1,6 @@
-# food_ordering
+## Food Ordering App 
 
-A new Flutter project.
+A Food Ordering App with admin panel
 
 ## Getting Started
 
